@@ -4,10 +4,6 @@ title:  "An exercise on treatment effects: Reproducing in R, Buser (2015) treatm
 date:   2017-04-21 14:07:43 +0200
 ---
 
-An exercise on treatment effects: Reproducing in R, Buser (2015) treatment effect analysis of income on religiousness
-================
-Kreshnik Xhangolli
-
 Purpose
 -------
 
@@ -159,7 +155,7 @@ g1[7:9] <- lapply(bin_vec,visual_inspection,"protestant","Protestant")
 grid.arrange(grobs = g1,ncol=3)
 ```
 
-![](https://kreshnikxhangolli.github.io/images/buser-2015/unnamed-chunk-3-1.png)
+![](https://kreshnikxhangolli.github.io/_images/buser-2015/unnamed-chunk-3-1.png)
 
 From a visual inspection of Fig 1. we can we can assume that a disconuitiy of monthly church attendance at the threshhold of the SELBEN II score exists. This is visible for different bin width used. In a similar manner we can assume the disconuity also from the visual inspection of Protestant affiliation (or likelihood of being Protestant) for all the three bin width presented. As for self perceived religiousness, while we might perceive a disconuity with binwidth 0.8, the disconuity is less clear when we reduce the bin width to 0.4 or 0.2. All the above results are in line with Buser(2015).
 
@@ -391,7 +387,7 @@ for (i in 1:length(check_list)){
 grid.arrange(grobs = g2, ncol = 2)
 ```
 
-![](https://kreshnikxhangolli.github.io/images/buser-2015/unnamed-chunk-10-1.png)
+![](https://kreshnikxhangolli.github.io/_images/buser-2015/unnamed-chunk-10-1.png)
 
 The hypothesis that thera are no breaks in the covariates is supported by the regression results in Table 4.
 

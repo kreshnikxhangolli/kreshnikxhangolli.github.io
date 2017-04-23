@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+
 I am an energetic and passionate data scientist. As part of the MSQ/PhD Program in Quantitative Economics at Goethe University Frankfurt, 
 I have spent the past 2 years taking Ph.D. level courses in Statistics and Econometrics, to tailor my previous mathematical background (
 B.A. in Mathematics) into Data Science and gain robust theoretical knowledge in statistical inference (modelling, estimation and testing) 
