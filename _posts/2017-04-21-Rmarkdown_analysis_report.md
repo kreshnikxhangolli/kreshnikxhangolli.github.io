@@ -154,8 +154,7 @@ g1[7:9] <- lapply(bin_vec,visual_inspection,"protestant","Protestant")
 
 grid.arrange(grobs = g1,ncol=3)
 ```
-
-![](https://kreshnikxhangolli.github.io/_images/buser-2015/unnamed-chunk-3-1.png)
+![](https://github.com/kreshnikxhangolli/kreshnikxhangolli.github.io/raw/master/_images/buser-2015/unnamed-chunk-3-1.png)
 
 From a visual inspection of Fig 1. we can we can assume that a disconuitiy of monthly church attendance at the threshhold of the SELBEN II score exists. This is visible for different bin width used. In a similar manner we can assume the disconuity also from the visual inspection of Protestant affiliation (or likelihood of being Protestant) for all the three bin width presented. As for self perceived religiousness, while we might perceive a disconuity with binwidth 0.8, the disconuity is less clear when we reduce the bin width to 0.4 or 0.2. All the above results are in line with Buser(2015).
 
@@ -387,7 +386,7 @@ for (i in 1:length(check_list)){
 grid.arrange(grobs = g2, ncol = 2)
 ```
 
-![](https://kreshnikxhangolli.github.io/_images/buser-2015/unnamed-chunk-10-1.png)
+![](https://github.com/kreshnikxhangolli/kreshnikxhangolli.github.io/raw/master/_images/buser-2015/unnamed-chunk-10-1.png)
 
 The hypothesis that thera are no breaks in the covariates is supported by the regression results in Table 4.
 
