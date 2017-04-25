@@ -128,7 +128,12 @@ df_neg_sc <- df[df$score<0,]
 Exercise 1: Visual Inspection
 -----------------------------
 
-Plots were build by using `ggplot2` package and the display of multiple plots was done with `gridExtra` package. Different bin sizes were used to calculate *E*(*Y*|*S*). To make code reusable we created a function that would take a bin width, y variable and y axis label as input and would return the desired plot as output. The y axis label is required mainly for better aesthetics. A list of was created by applying `base::lapply` to function `visual\_inspection` on an input vector of bin widths and the respective inputs for y variable and y axis label. Iteration was possible through `standard evaluation` of `ggplot2`, i.e `aes\_string`.
+Plots were build by using `ggplot2` package and the display of multiple plots was done with `gridExtra` package. 
+Different bin sizes were used to calculate $E(Y|S)$. To make code reusable we created a function that would take a bin width, 
+y variable and y axis label as input and would return the desired plot as output. The y axis label is required mainly for better
+ aesthetics. A list of was created by applying `base::lapply` to function `visual\_inspection` on an input vector of bin widths 
+ and the respective inputs for y variable and y axis label. Iteration was possible through `standard evaluation` of `ggplot2`, 
+ i.e `aes\_string`.
 
 ``` r
 visual_inspection <- function(bin_input, y_input, y_label_input){

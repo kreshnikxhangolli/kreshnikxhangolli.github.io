@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Portfolio of projects"
-date:   2017-04-23 14:07:43 +0200
+date:   2017-04-19 14:07:43 +0200
 ---
 Xhangolli, K. 2017. *“Testing for time-invariant unobserved correlation in Seemingly Unrelated Regression (SUR) with three dimensions”*  
 We propose through fixed effect estimation, a necessary test for time invariant unobserved effects correlation in a SUR model with 3 dimensions (such as panel data with multiple dependent variables). The test implementation in R consist of extending panel tests of `plm` package. First 3D SUR are transformed into 2D SUR by proper vectorization and Kronecker product operations applied through efficient matrix operation packages `SparaseM` and `bdsmatrix`. After residuals of the transformation are computed through `plm` panel tests, the covariance structure of the residuals is tested for non-correlation with bootstrap. 
