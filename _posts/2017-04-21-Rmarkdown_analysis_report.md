@@ -7,7 +7,9 @@ date:   2017-04-21 14:07:43 +0200
 Purpose
 -------
 
-The purpose of his exercise is to present the treatment effect analysis of income on religiousness conducted by Busser (2015) in R. In addition, this exercise introduces several elements of reproducible research and good analysis such as:
+The purpose of his exercise is to present the treatment effect analysis of income on religiousness conducted by Busser (2015) in R. While here we
+present a summary of the work, full code files are found in [Github](https://github.com/kreshnikxhangolli/Exercise-Rmd-sweave-income-on-religion)
+In addition, this exercise introduces several elements of reproducible research and good analysis such as:
 
 -   Use of one environment for both analysis and report writing. Code and comments are written in and package is employed.
 -   Use of user-definied functions for the production of plots when reproducing the same plot with diffrent bin size.
