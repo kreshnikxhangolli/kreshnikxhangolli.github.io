@@ -15,6 +15,8 @@ of a program of the last three years and (iv) visualizes the results through dat
 speed, we have used a five-levels deep list construct which is saved and called as an RDS. While here we
 present a summary of the work, full code files are found in [Github](https://github.com/kreshnikxhangolli/matura-albania-Lite)
 
+![](https://github.com/kreshnikxhangolli/kreshnikxhangolli.github.io/raw/master/_images/matura-api/interface.png)
+
 Running instructions
 -------
 Assuming `rshiny` has already been install one can run the application by typing on the console
@@ -68,6 +70,7 @@ required to manually enter all coefficients and students' inputs. Access to the 
 alternation of the calculating formula is possible. With the tools described above it required us (the authors) on average 6 minutes to 
 calculate the scores for a program. Considering that most high school students do not possess our Excel skills, we can estimate conservatively 
 that a high school students on average would test no more than 5 programs.
+![](https://github.com/kreshnikxhangolli/kreshnikxhangolli.github.io/raw/master/_images/matura-api/coeff.png)
 
 Such severe limitations emphasize the need of better tools for score calculations. This need is made more important considering that 54.8% 
 of the Albanian youth aged 16 to 27 years old has enrolled or would like to enroll. To our knowledge no such tools are currently available. 
@@ -101,6 +104,8 @@ One of the first problems encountered was the table of past applicants scores ca
 open source online tools for converting the tables from `pdf` to `Excel` files. The converted `Excel` tables had an irregular structure in the 
 sense that program and university information was commingled with scores information.
 
+![](https://github.com/kreshnikxhangolli/kreshnikxhangolli.github.io/raw/master/_images/matura-api/irregular_excel.png)
+
 Converting the first row with `as.number` and then discarding the records with `NaN` first row value could not be used since university and 
 program information could only be retrieved from the current tables. We retrieved the indexes where "Nr" occurred knowing that two sequential 
 "Nr" occurrences would identify a chunk of records with university and program name identified in the two records preceding the first "Nr" 
@@ -125,6 +130,7 @@ plot of past scores for the respective university and program. The `container ob
 initialization (not computation of scores!) of the web application. This approach results faster since the `RShiny` session will require only to 
 retrieve the score dataframe, coefficients dataframes and graph object once university and program input is given. This is faster since no 
 filtering or selection of variables will be required to access these three elements.
+![](https://github.com/kreshnikxhangolli/kreshnikxhangolli.github.io/raw/master/_images/matura-api/container.png)
 
 RShiny API
 -------
@@ -135,6 +141,7 @@ The input panel requires the user to enter only user specific information such a
 This greatly decreases time required to calculate scores and reduces chances of manual mistakes when entering exam or school coefficients. 
 The output panel displays the summary table and the graphs. The summary table displays the numerical value of student's score, the maximal 
 attainable score and the student's percentiles for all years on which there is available data.
+![](https://github.com/kreshnikxhangolli/kreshnikxhangolli.github.io/raw/master/_images/matura-api/interface.png)
 
 Instead the graphs visualize the density functions of past program winners and user's percentile score in the form of partly filled density 
 function. Achieving this type of graph required some programming acrobatics. While getting density plot functions is straightforward 
